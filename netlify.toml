@@ -1,6 +1,13 @@
 [build]
   publish = "."
 
+# Shared-dua landing page: app shares point at https://hiracircle.com/dua?d=…
+# Serve dua.html at the clean /dua path (rewrite, keeps the URL + query string).
+[[redirects]]
+  from = "/dua"
+  to = "/dua.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
