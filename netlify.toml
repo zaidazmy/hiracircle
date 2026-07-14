@@ -1,6 +1,17 @@
 [build]
   publish = "."
 
+# Tester landing page: the "12 testers" post links to https://hiracircle.com/testers
+[[redirects]]
+  from = "/testers"
+  to = "/testers.html"
+  status = 200
+
+[[redirects]]
+  from = "/beta"
+  to = "/testers.html"
+  status = 301
+
 # Shared-dua landing page: app shares point at https://hiracircle.com/dua?d=…
 # Serve dua.html at the clean /dua path (rewrite, keeps the URL + query string).
 [[redirects]]
@@ -27,6 +38,6 @@
     Cache-Control = "public, max-age=86400"
 
 [[headers]]
-  for = "/*.jsx"
+  for = "/*.js"
   [headers.values]
     Cache-Control = "public, max-age=86400"
