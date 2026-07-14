@@ -23,16 +23,14 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Amiri:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500;600&family=Amiri:wght@400;700&display=swap" />
 
   <link rel="stylesheet" href="site.css" />
   <script>
     (function () {
       var t = null;
       try { t = localStorage.getItem('hira-theme'); } catch (e) {}
-      if (t !== 'light' && t !== 'dark') {
-        t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      }
+      if (t !== 'light' && t !== 'dark') t = 'dark';
       document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
@@ -43,6 +41,7 @@
     <span class="blob b1"></span>
     <span class="blob b2"></span>
     <span class="blob b3"></span>
+    <span class="blob b4"></span>
   </div>
 
   <header class="nav" id="nav">
@@ -89,7 +88,8 @@
           </ol>
         </div>
 
-        <div data-reveal data-reveal-delay="1">
+        <div class="testers-form-wrap" data-reveal data-reveal-delay="1">
+          <div class="orb orb-testers" aria-hidden="true"></div>
           <div class="testers-form-card glass">
             <p class="kicker">Save your seat</p>
             <h2>I&rsquo;m in — add me.</h2>
