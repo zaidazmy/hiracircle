@@ -56,7 +56,7 @@
       <div class="nav-links">
         <a href="#mathurat">Ma&rsquo;thurat</a>
         <a href="#story">Story</a>
-        <a href="#features">Features</a>
+        <a href="#languages">Languages</a>
         <a href="#hira">Vision</a>
       </div>
       <div class="nav-actions">
@@ -89,8 +89,6 @@
         </div>
 
         <div class="hero-stage" data-reveal data-reveal-delay="1">
-          <div class="orb orb-hero" aria-hidden="true"></div>
-          <div class="ring ring-hero" aria-hidden="true"></div>
           <div class="tilt" id="tilt">
             <div class="chip chip-tl glass" aria-hidden="true">
               <span class="chip-ic">🔥</span>
@@ -172,10 +170,17 @@
           </p>
         </div>
 
-        <blockquote class="story-pull glass" data-reveal data-reveal-delay="2">
-          Not an app you open — <b>a habit you live</b>. Streaks, gentle reminders,
-          and a reader that respects the text and your time.
-        </blockquote>
+        <div class="wird-card glass" data-reveal data-reveal-delay="2" role="img" aria-label="A two-week wird streak, day by day">
+          <div class="wird-head">
+            <span class="wird-title">Your wird, day by day</span>
+            <span class="wird-flame">🔥 14</span>
+          </div>
+          <div class="wird-grid" id="wirdGrid" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i><i class="today"></i>
+          </div>
+          <p class="wird-fine">Morning after Fajr &middot; Evening after &rsquo;Asr &middot; gentle reminders, never guilt</p>
+        </div>
       </div>
     </section>
 
@@ -213,99 +218,7 @@
       </div>
     </section>
 
-    <!-- ── 3b · Bento features ──────────────────────────── -->
-    <section class="section" id="features">
-      <div class="container">
-        <p class="kicker" data-reveal>Everything the habit needs</p>
-        <h2 data-reveal>Designed around <em>your day.</em></h2>
-
-        <div class="bento">
-          <article class="bcard b-streak glass" data-reveal>
-            <div class="bhead">
-              <span class="bic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 4-4 5.5-4 10a4 4 0 008 0c0-1.5-.5-2.5-1-3.5 2 .5 4 2.5 4 5.5a7 7 0 11-14 0C5 8 10 6.5 12 2z"/></svg></span>
-              <h3>A streak that builds your wird</h3>
-            </div>
-            <p>Complete the morning and evening recitations, keep the flame alive, and watch consistency become identity.</p>
-            <div class="wird-head">
-              <span class="wird-title">Your wird, day by day</span>
-              <span class="wird-flame">🔥 14</span>
-            </div>
-            <div class="wird-grid" id="wirdGrid" aria-hidden="true">
-              <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-              <i></i><i></i><i></i><i></i><i></i><i></i><i class="today"></i>
-            </div>
-            <p class="wird-fine">Morning after Fajr &middot; Evening after &rsquo;Asr &middot; points, ranks &amp; an optional scoreboard</p>
-          </article>
-
-          <article class="bcard b-flow glass" data-reveal data-reveal-delay="1">
-            <div class="bhead">
-              <span class="bic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.5v13l10-6.5-10-6.5z"/></svg></span>
-              <h3>Flow Mode</h3>
-            </div>
-            <p>Hands-free recitation, verse by verse, with lock-screen controls. The screen stays awake; you stay present.</p>
-            <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          </article>
-
-          <article class="bcard b-mood glass" data-reveal>
-            <div class="bhead">
-              <span class="bic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6a5.5 5.5 0 00-9.8-2.5 5.5 5.5 0 00-9.8 2.5c0 5.5 9.8 11 9.8 11s9.8-5.5 9.8-11z" transform="translate(1 1) scale(.92)"/></svg></span>
-              <h3>A dua for every moment</h3>
-            </div>
-            <p>The full Hisnul Muslim library, organised by how you feel and what you&rsquo;re doing — each with audio.</p>
-            <div class="moods" aria-hidden="true">
-              <span><i style="--md:#8FA7E8"></i>Anxiety &amp; Grief</span>
-              <span><i style="--md:#57C48A"></i>Gratitude</span>
-              <span><i style="--md:#5EB8D6"></i>Fear &amp; Safety</span>
-              <span><i style="--md:#E8A063"></i>Forgiveness</span>
-              <span><i style="--md:#D97BA4"></i>Love &amp; Mercy</span>
-            </div>
-          </article>
-
-          <article class="bcard b-themes glass" data-reveal data-reveal-delay="1">
-            <div class="bhead">
-              <span class="bic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 000 18c1.5 0 2-1 1.5-2s-1-2 .5-3 4-.5 5-2 .5-3-1-4"/></svg></span>
-              <h3>Made to feel like yours</h3>
-            </div>
-            <p>Light &amp; dark themes, five accent colours, Arabic fonts you can switch and resize independently.</p>
-            <div class="tdots" aria-hidden="true">
-              <span class="sel" style="background:#5B4FCF"></span>
-              <span style="background:#0F5C4C"></span>
-              <span style="background:#C2455A"></span>
-              <span style="background:#D98E3F"></span>
-              <span style="background:#2AA79B"></span>
-              <span class="aa">Aa</span>
-            </div>
-          </article>
-
-          <article class="bcard b-remind glass" data-reveal data-reveal-delay="2">
-            <div class="bhead">
-              <span class="bic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 9a6 6 0 10-12 0c0 6-2.5 7-2.5 7h17S18 15 18 9zM10 20a2.2 2.2 0 004 0"/></svg></span>
-              <h3>Gentle reminders</h3>
-            </div>
-            <p>Nudges around your own rhythm — plus a home-screen widget and a built-in tasbih counter.</p>
-            <div class="rrows" aria-hidden="true">
-              <div class="rrow"><span>☀&#xFE0E; Morning alert</span><b>06:00</b><span class="rtog"></span></div>
-              <div class="rrow"><span>☾&#xFE0E; Evening alert</span><b>17:00</b><span class="rtog"></span></div>
-            </div>
-          </article>
-
-          <article class="bcard b-free glass" data-reveal>
-            <div class="bhead">
-              <span class="bic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V7l8-4z"/><path d="M9 12l2 2 4-4.5"/></svg></span>
-              <div>
-                <h3>Free. No ads. Private by design.</h3>
-                <p>Use the entire app as a guest — no account needed. Sign in only if you want your progress to sync.</p>
-              </div>
-            </div>
-            <div class="free-tags" aria-hidden="true">
-              <span>No trackers</span><span>Guest mode</span><span>Delete anytime</span><span>Free at launch</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── 3c · A look inside ───────────────────────────── -->
+    <!-- ── 3b · A look inside ───────────────────────────── -->
     <section class="section inside" id="inside">
       <div class="container">
         <p class="kicker" data-reveal>A look inside</p>
@@ -332,7 +245,6 @@
     <!-- ── 4 · The bigger picture ───────────────────────── -->
     <section class="section vision" id="hira">
       <div class="container narrow center">
-        <div class="orb orb-vision" aria-hidden="true"></div>
         <img class="vision-mark" src="assets/brand/mark-gradient.png" alt="" width="86" height="141" data-reveal />
         <p class="kicker" data-reveal>The bigger picture</p>
         <h2 data-reveal>The first piece of<br />something larger.</h2>
@@ -372,7 +284,6 @@
     <!-- ── 6 · Email capture ────────────────────────────── -->
     <section class="section subscribe" id="notify">
       <div class="container narrow center">
-        <div class="orb orb-sub" aria-hidden="true"></div>
         <div class="sub-card glass" data-reveal>
           <p class="kicker">Stay in the loop</p>
           <h2>Be there on day one.</h2>
