@@ -11,7 +11,7 @@
 <meta property="og:description" content="Read it here, or open it in Ma'thurat Global." />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Hira" />
-<meta name="theme-color" content="#0A1411" />
+<meta name="theme-color" content="#0D0B1C" />
 
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
@@ -23,21 +23,21 @@
 
 <style>
   :root {
-    --bg: #0A1411; --bg-soft: #0D1A15; --bg-elev: #12221C;
-    --ink: #F2EFE6; --ink-mute: #A8B5AB; --ink-dim: #6E7D72;
-    --line: rgba(169,191,175,0.16); --line-soft: rgba(169,191,175,0.07);
-    --violet-100: #E9F1EA; --violet-300: #C9D6C4; --violet-400: #8FB6A2;
-    --violet-500: #7C9D8A; --violet-600: #0F5C4C;
-    --grad: linear-gradient(135deg, #0F5C4C 0%, #4E7D68 55%, #7C9D8A 100%);
+    --bg: #0D0B1C; --bg-soft: #12101F; --bg-elev: #181530;
+    --ink: #EFEDF7; --ink-mute: #A6A1C4; --ink-dim: #6F6A96;
+    --line: rgba(160,157,226,0.16); --line-soft: rgba(160,157,226,0.07);
+    --violet-100: #E9E6FA; --violet-300: #C7C2F0; --violet-400: #A09DE2;
+    --violet-500: #7B6FF0; --violet-600: #5B4FCF;
+    --grad: linear-gradient(135deg, #5B4FCF 0%, #7B6FF0 55%, #A09DE2 100%);
     --radius: 14px; --radius-lg: 22px;
-    --shadow-glow: 0 30px 80px -20px rgba(11,61,51,0.55);
+    --shadow-glow: 0 30px 80px -20px rgba(91,79,207,0.45);
   }
   @media (prefers-color-scheme: light) {
     :root {
-      --bg: #FBF9F4; --bg-soft: #FFFFFF; --bg-elev: #FFFFFF;
-      --ink: #14231D; --ink-mute: #43554B; --ink-dim: #7C8B81;
-      --line: rgba(15,92,76,0.14); --line-soft: rgba(15,92,76,0.07);
-      --shadow-glow: 0 30px 80px -20px rgba(11,61,51,0.22);
+      --bg: #F7F5FC; --bg-soft: #FFFFFF; --bg-elev: #FFFFFF;
+      --ink: #191533; --ink-mute: #55506E; --ink-dim: #8A85A8;
+      --line: rgba(91,79,207,0.14); --line-soft: rgba(91,79,207,0.07);
+      --shadow-glow: 0 30px 80px -20px rgba(91,79,207,0.22);
     }
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -46,8 +46,8 @@
     font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     color: var(--ink);
     background:
-      radial-gradient(120% 90% at 90% 100%, rgba(15,92,76,0.18) 0%, transparent 55%),
-      radial-gradient(90% 70% at 6% 4%, rgba(201,194,166,0.14) 0%, transparent 50%),
+      radial-gradient(120% 90% at 90% 100%, rgba(91,79,207,0.18) 0%, transparent 55%),
+      radial-gradient(90% 70% at 6% 4%, rgba(160,157,226,0.10) 0%, transparent 50%),
       var(--bg);
     background-attachment: fixed;
     display: flex; flex-direction: column; align-items: center;
@@ -68,7 +68,7 @@
   .brand .word span { color: var(--violet-400); }
   .banner {
     display: flex; align-items: center; gap: 9px; width: 100%; max-width: 520px;
-    background: rgba(124,157,138,0.12); border: 1px solid var(--line);
+    background: rgba(123,111,240,0.10); border: 1px solid var(--line);
     border-radius: var(--radius); padding: 11px 14px; margin-bottom: 14px;
     font-size: 13.5px; color: var(--ink-mute);
   }
@@ -81,14 +81,14 @@
   .label { font-size: 13px; font-weight: 500; color: var(--ink-mute); margin: 0 0 16px; }
   .arabic { font-family: 'Amiri', serif; direction: rtl; font-size: 31px; line-height: 1.95; margin: 4px 0 16px; color: var(--ink); }
   .translit { font-style: italic; font-size: 14px; color: var(--ink-mute); margin: 0 0 12px; }
-  .trans { background: rgba(124,157,138,0.10); border-radius: var(--radius); padding: 14px; font-size: 14.5px; line-height: 1.7; margin: 6px 0; color: var(--ink); }
+  .trans { background: rgba(123,111,240,0.09); border-radius: var(--radius); padding: 14px; font-size: 14.5px; line-height: 1.7; margin: 6px 0; color: var(--ink); }
   .ref { font-size: 12px; color: var(--ink-dim); margin-top: 12px; }
   .actions { width: 100%; max-width: 520px; margin-top: 18px; display: flex; flex-direction: column; gap: 12px; align-items: center; }
   .btn {
     display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%;
     text-decoration: none; font-weight: 600; font-size: 15px; padding: 15px 20px;
     border-radius: 16px; border: none; cursor: pointer; color: #fff;
-    background: var(--grad); box-shadow: 0 12px 30px -10px rgba(15,92,76,0.55);
+    background: var(--grad); box-shadow: 0 12px 30px -10px rgba(91,79,207,0.5);
   }
   .muted { font-size: 13px; color: var(--ink-mute); text-decoration: none; }
   .muted:hover { color: var(--violet-300); }
