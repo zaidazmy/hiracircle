@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Hira — The daily adhkar, made beautiful.</title>
-  <meta name="description" content="Ma'thurat Global is a bilingual morning & evening remembrance app built around one thing most azkar apps forget: helping you actually keep the habit. The first piece of Hira." />
+  <meta name="description" content="Hira builds calm, beautiful tools for daily faith. First up: Ma'thurat Global — a free morning & evening adhkar (azkar) app with authentic translations in 8 languages including Tamil and Sinhala, streaks that build the habit, and hands-free audio." />
   <link rel="canonical" href="https://hiracircle.com/" />
+  <meta name="robots" content="index, follow" />
+  <meta name="application-name" content="Hira" />
+  <meta name="apple-mobile-web-app-title" content="Hira" />
 
   <meta property="og:title" content="Hira — The daily adhkar, made beautiful." />
   <meta property="og:description" content="Ma'thurat Global: morning & evening adhkar with translations in 8 languages, streaks that build your wird, and audio that flows. Coming soon — free, no ads." />
@@ -24,6 +27,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500;600&family=Amiri:wght@400;700&display=swap" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://hiracircle.com/#org",
+        "name": "Hira",
+        "url": "https://hiracircle.com/",
+        "logo": "https://hiracircle.com/assets/favicon-512.png",
+        "email": "circlehira@gmail.com",
+        "slogan": "Faith, beautifully kept.",
+        "description": "Hira is a digital home for Muslims — calm, beautifully crafted tools for daily faith. Its first product is Ma'thurat Global, a bilingual morning and evening adhkar app.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Mawanella", "addressCountry": "LK" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://hiracircle.com/#website",
+        "url": "https://hiracircle.com/",
+        "name": "Hira",
+        "alternateName": ["Hira Circle", "hiracircle"],
+        "publisher": { "@id": "https://hiracircle.com/#org" }
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "Ma'thurat Global",
+        "operatingSystem": "Android",
+        "applicationCategory": "LifestyleApplication",
+        "description": "Morning & evening adhkar (al-Ma'thurat) with authentic translations in 8 languages — Tamil, Sinhala, English, Urdu, French, Indonesian, Turkish, Bengali — plus streaks, gentle reminders and hands-free audio. Free, no ads.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@id": "https://hiracircle.com/#org" }
+      }
+    ]
+  }
+  </script>
 
   <link rel="stylesheet" href="site.css" />
   <script>

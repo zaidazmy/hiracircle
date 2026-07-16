@@ -620,6 +620,8 @@ h2 {
   .essence-grid { grid-template-columns: 1fr; }
   .email-row { flex-direction: column; }
   .email-row .btn { width: 100%; padding: 16px; }
+  /* flatten the 3D context so chip z-index wins over the phone's translateZ */
+  .tilt { transform-style: flat; }
   .chip-tl { top: -12px; left: 4px; transform: translateX(-10%); }
   .chip-br { bottom: -12px; right: 4px; transform: translateX(10%); }
   .wird-grid { grid-template-columns: repeat(7, 1fr); }
