@@ -32,12 +32,14 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# CSS/JS share a stable filename, so revalidate every visit (cheap 304 via
+# ETag) — this keeps the site fresh during active iteration and launch.
 [[headers]]
   for = "/*.css"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/*.js"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=0, must-revalidate"
