@@ -106,6 +106,8 @@
     }).join('&');
   };
 
+  var WHATSAPP_NUMBER = '94760448858';
+
   var wireForm = function (formId, successId, fineId) {
     var form = document.getElementById(formId);
     var success = document.getElementById(successId);
@@ -126,6 +128,12 @@
         if (!res.ok) throw new Error('HTTP ' + res.status);
         form.hidden = true;
         success.hidden = false;
+        var wa = success.querySelector('.wa-btn');
+        if (wa && data.email) {
+          var msg = "Hi! I signed up to test Ma'thurat Global. My email is: " + data.email;
+          wa.href = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(msg);
+          wa.hidden = false;
+        }
         success.setAttribute('tabindex', '-1');
         success.focus({ preventScroll: false });
       }).catch(function () {
